@@ -1,0 +1,129 @@
+/* App Container */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('thumbnail.jpeg');
+  background-size: 800px;
+  background-position: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Form Styles */
+.credit-card {
+    width: 100%;
+    max-width: 75%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    border-radius: 1.5rem; /* Increase border-radius for a curvier look */
+  
+    background: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  }
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-xl {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.text-gray-700 {
+  color: #d1d5db;
+}
+
+/* Input Styles */
+.input {
+    border: 2px solid #0093E9;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    background-color: #e0e7ff;
+    color: #333333;
+    border-radius: 0.8rem; /* Increase border-radius for a curvier look */
+  }
+  
+  .input-bordered {
+    border-radius: 1.2rem;
+  }
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: background 0.3s ease; 
+}
+
+.btn-primary {
+  background: #fbda61; 
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  color: white;
+  border-radius: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+
+.submit-button {
+  border: none;
+  outline: none;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.table th,
+.table td {
+
+  padding: 0.75rem;
+  text-align: left;
+  
+}
+
+
+.tx-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tx-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Additional Styles */
+.shadow-lg {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Group Styles */
+.btn-group {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
